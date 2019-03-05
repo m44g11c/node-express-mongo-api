@@ -1,0 +1,19 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-paginate": "^1.0.0",
+    "mongoose": "^5.4.16",
+    "mongoose-timestamp": "^0.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
