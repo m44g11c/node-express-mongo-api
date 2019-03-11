@@ -12,7 +12,7 @@ router.route('/').post(function (req, res) {
   article.save()
     .then(article => {
     res.status(200).json({
-      'id': `${article.id}`,
+      '_id': `${article.id}`,
       "title": `${article.title}`,
       "body": `${article.body}`,
       "updated_at": `${article.updated_at}`,
@@ -46,7 +46,7 @@ router.route('/:id').put(function (req, res) {
       article.body = req.body.body;
       article.save().then(article => {
           res.json({
-          'id': `${article.id}`,
+          '_id': `${article.id}`,
           "title": `${article.title}`,
           "body": `${article.body}`,
           "updated_at": `${article.updated_at}`,
